@@ -1,18 +1,12 @@
-# revision 27331
-# category Package
-# catalog-ctan /macros/latex/contrib/opteng
-# catalog-date 2012-06-16 14:32:26 +0200
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-opteng
-Version:	1.0
-Release:	11
+Version:	27331
+Release:	1
 Summary:	SPIE Optical Engineering and OE Letters manuscript template
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/opteng
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ this is particularly important for the latter. The template
 gives simple instructions on how to prepare the manuscript.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,7 @@ gives simple instructions on how to prepare the manuscript.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
