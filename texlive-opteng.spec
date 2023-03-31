@@ -1,6 +1,6 @@
 Name:		texlive-opteng
 Version:	27331
-Release:	1
+Release:	2
 Summary:	SPIE Optical Engineering and OE Letters manuscript template
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/opteng
