@@ -3,7 +3,7 @@ Version:	27331
 Release:	2
 Summary:	SPIE Optical Engineering and OE Letters manuscript template
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/opteng
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/opteng
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/opteng.doc.r%{version}.tar.xz
